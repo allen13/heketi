@@ -53,7 +53,7 @@
     },
 
     "_db_comment": "Database file name",
-    "db": "/var/lib/heketi/heketi.db",
+    "db": "./heketi.db",
 
     "_loglevel_comment": [
       "Set log level. Choices are:",

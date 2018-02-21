@@ -435,6 +435,13 @@ func (a *App) SetRoutes(router *mux.Router) error {
 			Method:      "GET",
 			Pattern:     "/db/dump",
 			HandlerFunc: a.DbDump},
+
+		// Metrics
+		rest.Route{
+			Name:        "Metrics",
+			Method:      "GET",
+			Pattern:     "/metrics",
+			HandlerFunc: a.Metrics()},
 	}
 
 	// Register all routes from the App
